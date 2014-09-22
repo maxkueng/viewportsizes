@@ -15,7 +15,7 @@ sizes = devices.map(function (device, index) {
 	var fulltext = device['Device Name'].toLowerCase()
 	             + ' ' + device['Platform'].toLowerCase()
 	             + ' ' + device['Release Date'].toLowerCase();
-	
+
 var key = device['Device Name'].toLowerCase();
 	map[key] = index;
 
@@ -25,8 +25,8 @@ var key = device['Device Name'].toLowerCase();
 		name: device['Device Name'],
 	  	platform: device['Platform'].toLowerCase() + ' ' + device['OS Version'].toLowerCase(),
 	  	size: {
-			width: device['Portrait Width'],
-	  		height: device['Landscape Width']
+			width: parseInt(device['Portrait Width'], 10),
+	  		height: parseInt(device['Landscape Width'], 10)
 		},
 	  	release: device['Release Date']
 	};

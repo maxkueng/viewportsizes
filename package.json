@@ -15,9 +15,14 @@
     }
   ],
   "scripts": {
-    "install": "node install"
+    "install": "node install",
+    "test": "tape test/*.js | tap-spec"
   },
   "dependencies": {
     "wget": "0.0.1"
+  },
+  "devDependencies": {
+    "tap-spec": "^1.0.0",
+    "tape": "^3.0.0"
   }
 }
