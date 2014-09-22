@@ -1,11 +1,13 @@
 viewportsizes
 =============
 
+[![Build Status](https://secure.travis-ci.org/maxkueng/viewportsizes.png?branch=master)](http://travis-ci.org/maxkueng/viewportsizes)
+
 Inspired by [viewport-list](https://github.com/kevva/viewport-list), this module
-gives you an offline version of [viewportsizes.com](http://viewportsizes.com/)'s
+gives you an *offline* version of [viewportsizes.com](http://viewportsizes.com/)'s
 viewport sizes list.
 
-This module downloads a viewport list upon installation and does not request it
+It module downloads a viewport list upon installation and does not request it
 from the Internet every time.
 
 ### Installation
