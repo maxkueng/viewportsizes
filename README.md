@@ -84,7 +84,7 @@ viewports.get('iphone 5');
   release: '2012-09' }
 ```
 
-**Get a record by key and force oriantation**
+**Get a record by key and force orientation**
 
 You can add `@landscape` or `@portrait` to the key to rotate the device.
 
