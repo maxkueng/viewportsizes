@@ -12,6 +12,28 @@ test('get()', function (t) {
 
 });
 
+test('get() with explicit landscape orientation', function (t) {
+	t.plan(3);
+
+	var info = viewportsizes.get('iphone 5@landscape');
+
+	t.equal(info.key, 'iphone 5', 'key');
+	t.equal(info.size.width, 568, 'width');
+	t.equal(info.size.height, 320, 'height');
+
+});
+
+test('get() with explicit portrait orientation', function (t) {
+	t.plan(3);
+
+	var info = viewportsizes.get('iphone 5@portrait');
+
+	t.equal(info.key, 'iphone 5', 'key');
+	t.equal(info.size.width, 320, 'width');
+	t.equal(info.size.height, 568, 'height');
+
+});
+
 test('list()', function (t) {
 	t.plan(1);
 

@@ -18,13 +18,13 @@ npm install viewportsizes --save
 
 ### Usage
 
-Load the module:
+**Load the module**
 
 ```javascript
 var viewports = require('viewportsizes');
 ```
 
-Get a list of all viewport sizes:
+**Get a list of all viewport sizes**
 
 ```javascript
 viewports.list();
@@ -42,7 +42,7 @@ viewports.list();
 ]
 ```
 
-Search the list:
+**Search the list**
 
 ```javascript
 viewports.list('iphone 5');
@@ -69,7 +69,7 @@ viewports.list('iphone 5');
     release: '2013-09' } ]
 ```
 
-Get a record by key:
+**Get a record by key**
 
 ```javascript
 viewports.get('iphone 5');
@@ -81,6 +81,23 @@ viewports.get('iphone 5');
   name: 'iPhone 5',
   platform: 'ios 6.0',
   size: { width: '320', height: '568' },
+  release: '2012-09' }
+```
+
+**Get a record by key and force oriantation**
+
+You can add `@landscape` or `@portrait` to the key to rotate the device.
+
+```javascript
+viewports.get('iphone 5@landscape');
+```
+
+```
+{ key: 'iphone 5',
+  fulltext: 'iphone 5 ios 2012-09',
+  name: 'iPhone 5',
+  platform: 'ios 6.0',
+  size: { width: '568', height: '320' },
   release: '2012-09' }
 ```
 
