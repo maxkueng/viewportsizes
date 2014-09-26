@@ -34,6 +34,15 @@ test('get() with explicit portrait orientation', function (t) {
 
 });
 
+test('get() with non-existent key', function (t) {
+	t.plan(1);
+
+	var info = viewportsizes.get('ding dong');
+
+	t.notOk(info, 'falsy');
+
+});
+
 test('list()', function (t) {
 	t.plan(1);
 

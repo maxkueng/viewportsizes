@@ -1,6 +1,6 @@
 {
   "name": "viewportsizes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Get viewport sizes from viewportsizes.com",
   "repository": {
     "type": "git",
