@@ -49,7 +49,7 @@ function get (key) {
 	var key = parts[0];
 	var orientation = parts[1];
 
-	var record = sizes[map[key]];
+	var record = clone(sizes[map[key]]);
 
 	if (!record) { return null; }
 
@@ -66,4 +66,8 @@ function get (key) {
 	}
 
 	return record;
+}
+
+function clone (obj) {
+	return JSON.parse(JSON.stringify(obj));
 }
